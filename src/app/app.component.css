@@ -1,0 +1,70 @@
+.m-auto{
+    margin: auto;
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.navleft{
+    font-size: 20px;
+    display: flex;
+    
+}
+
+.navleft ul{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 77px;
+}
+
+.navleft ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family:var(--font1);
+    transition: all 0.3s, ease-in-out;
+}
+
+.navleft ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navleft ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bolder;
+    
+}
+
+.navigation{
+    /* background-color:  #33383b; */
+    margin-top: 25px;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 55%; /* Keep ratio for 900x500 images */
+    height: 30%;
+    width: 100%;
+  }
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-inner>.carousel-item>img {
+    width: 80%;
+    height: 600px;
+  }
+

@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/About">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/Services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/Contact">Costumer Support</a>
+      </li>
+
+      <a routerLinkActive="active" routerLink="/About"><img src="https://static1.squarespace.com/static/5494b2e0e4b04c9ad8411130/t/54a075b5e4b0df76872502a5/1419802040667/Final_Hi_Res.jpg?format=1500w" style="height:30px; width:60px; margin-left: 10rem; margin-right: 10rem; margin-top: 8px;" alt="Logo"></a>
+
+      <li class="nav-item">
+        <a class="nav-link fa fa-shopping-cart aria-hidden='true' fs-6 fw-bolder" style="margin-top: 3px;" routerLinkActive="active" routerLink="/Cart">&nbsp; Cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/BookAppointmemt">Book Appointment</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/wedding6.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/wedding4.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/bday12.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <router-outlet>
+</router-outlet>
+
+
+
+<br><br>
+<div class=" my-5">
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+        <!-- Facebook -->
+        <a class="btn btn-light btn-floating m-1"  href="#!" role="button"><i
+            class="fa fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-light btn-floating m-1"  href="#!" role="button"><i
+            class="fa fa-twitter"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-light btn-floating m-1"  href="#!" role="button"><i
+            class="fa fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-light btn-floating m-1"  href="#!" role="button"><i
+            class="fa fa-linkedin"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white fst-italic text-decoration-none" href="https://mdbootstrap.com/">Eventful</a>
+      <br>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
