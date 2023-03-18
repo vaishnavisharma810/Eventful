@@ -1,0 +1,27 @@
+.accordian {
+    margin-left: 12px;
+  }
+
+  .m-auto{
+    margin: auto;
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+#faq{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    color: rgb(117, 29, 29);
+}
+
+#query{
+    margin-left: 400px;
+    margin-top: 5px;
+}
+
+body{
+    overflow-x: hidden;
+}
