@@ -1,0 +1,9 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/1130298788/photo/flowers-composition-gypsophila-flowers-on-pastel-blue-background-flat-lay-top-view-copy-space.jpg?s=612x612&w=0&k=20&c=26pP6dCuZINwsGHrBOSVZacjEUPhC3I4fV8-LrWSVIw=);
+}
+
+.selectForm{
+    margin-left: 40%;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

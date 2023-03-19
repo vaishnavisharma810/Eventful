@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
   {path: "BookAppointment", component: BookAppointmentComponent},
   {path: "Cart", component: CartComponent},
   {path: "Services", component: ServicesComponent},
-  {path: "**", component: AboutUsComponent}
+  {path: "**", component: NoPageFoundComponent}
 ];
 
 @NgModule({

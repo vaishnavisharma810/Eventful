@@ -58,18 +58,88 @@
 <div class="container shadow min-vh-40 py-4">
   <div class="row">
     <div class="col-md-5 mx-auto">
-      <div class="small fw-light">&nbsp;Search Your city here </div>
+      <div class=" fw-light" style="font-size: large; font-weight: bold;">&nbsp;We present at 600+ cities and 14+ states in India <br>&nbsp;Search Your city here</div>
       <div class="input-group">
         <input class="form-control border-end-0 border rounded-pill" type="search" 
-          id="example-search-input" placeholder="search">
+          id="example-search-input" placeholder="search" [(ngModel)]="search">
         <span class="input-group-append"> &nbsp;&nbsp;
           <button class="btn bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search" (click)="searchCity()"></i>
           </button>
         </span>
       </div>
     </div>
   </div>
 </div>
+<br><br>
+<h3 style="margin-left: 43%;color: rgb(47,104,104);">Our Services</h3>
+<div class="card-container">
+  <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img class="card-img-top" src="https://www.enhanceyourpalate.com/wp-content/uploads/Front-Yard-Birthday-Party-W1280-201.jpg" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Birthday Parties</h4>
+        <p class="card-text">Had 1000+ successful birthday party events in 80+ cities across India</p>
+        <a href="#" class="btn btn-info" routerLinkActive="active" routerLink="/Cart">Explore More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img class="card-img-top" src="https://deowgxgt4vwfe.cloudfront.net/uploads/1649851909_small.jpg" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Anniversary Celebrations</h4>
+        <p class="card-text">Had 870+ successful anniversary parties in 90+ cities across India</p>
+        <a class="btn btn-info" routerLinkActive="active" routerLink="/Cart">Explore More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0254/2030/0362/files/Peach-Balloon-Arch_600x600.jpg?v=1621520325" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Baby Showers</h4>
+        <p class="card-text">Had 600+ successful baby showers events in 100+ cities across India.</p>
+        <a href="#" class="btn btn-info" routerLinkActive="active" routerLink="/Cart">Explore More</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Our BestSellers -->
+<h3 style="margin-left: 34%;">Our BestSeller : Wedding Events</h3>
+<div class="container-bestseller">
+</div>
+
+<br>
+<br>
+<h3>Our Key Points That Differentiate Us From Others</h3>
+<div class="key-points">
+  <div class="box" id="delivery">
+   <img src="https://www.7eventzz.com/public/front/images/icon2.png" alt="">
+    Service in 200+ cities</div>
+  <div class="box" id="trust">
+    <img src="https://www.7eventzz.com/public/front/images/icon3.png" alt="">
+    Trusted By millions
+  </div>
+  <div class="box" id="buyer">
+    <img src="https://www.7eventzz.com/public/front/images/icon4.png" alt="">
+    100% happy customers
+  </div>
+  <div class="box" id="protect">
+    <img src="https://www.7eventzz.com/public/front/images/icon1.png" alt="">
+    Follows covid-19 guidelines
+  </div>
+</div>
+
+
+
+
+<br><br>
 

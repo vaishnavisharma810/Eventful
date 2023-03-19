@@ -1,1 +1,39 @@
-<p>cart works!</p>
+<body>
+<br>
+<h2 style="margin-left: 10%; color: rgb(47,104,104) ;">See what all curated packs we have for our clients at reasonable rates</h2>
+<br>
+<button class="btn btn-info" (click)="readProductData()" style="margin-left: 40%;">See All Packs Information</button>
+<br><br>
+<div class="container">
+<table class="table table-hover table-bordered text-center">
+    <thead class="text-light bg-dark">
+        <th>Pack ID</th>
+        <th>Pack Name</th>
+        <th>Pack Description</th>
+        <th>Cost</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of productsData" style="font-weight: 500;">
+            <td>{{product.packID}}</td>
+            <td>{{product.packName}}</td>
+            <td>{{product.packDescription}}</td>
+            <td>{{product.packCost | currency : 'INR'}}</td>
+            <td>
+                <button class="btn btn-success" (click)="selectProduct(product.packID)">Select</button> &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="selectForm">
+    <div *ngIf='bDisplaySelectForm == true'>
+      Pack ID : <br> <input type="text" [(ngModel)]="productsData[index].packID" /> <br /><br /> 
+      Pack Name : <br> <input type="text" [(ngModel)]="productsData[index].packName" /> <br /><br />
+      Pack Cost : <br> <input type="text" [(ngModel)]="productsData[index].packCost" /> <br /> <br>
+      Pack Description : <br> <input type="text" [(ngModel)]="productsData[index].packDescription" /> <br /> <br>
+      <button class="btn btn-primary" (click)="onSave()">Review and Pay</button>
+    </div>
+  </div> 
+</div>
+<br><br><br><br><br><br><br><br><br>
+</body>

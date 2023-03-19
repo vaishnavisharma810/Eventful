@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-  
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,5 +21,5 @@ export class AppComponent {
     config.interval = 2000;
     config.keyboard = true;
     config.pauseOnHover = true;
-  }
+  } 
 }

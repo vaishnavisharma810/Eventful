@@ -28,4 +28,114 @@ ngb-carousel .wrapper {
     height: 600px;
   }
 
+  .key-points{
+    display: flex;
+    flex-direction: row;
+    margin-left: 9%;
+    margin-top: 10px;
+  }
+
+  .box{
+    margin:40px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 180px;
+    background-color: rgb(238, 246, 244);
+    color: rgb(60,155,155);
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  h3{
+    margin-left: 26%;
+    color: rgb(47,104,104);
+  }
+
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 22px;
+  }
+
+
+  .card-wrapper {
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+
+  .card-image .card .card-body {
+    display: none;
+  }
+
+  .card {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .card:hover {
+    box-shadow: 8px 12px 31px -10px #ab98ab;
+  }
+
+  .card-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    overflow: hidden;
+  }
+  .card-img-wrapper img {
+    transition: 1.5s ease;
+  }
+  .card:hover .card-img-wrapper img {
+    transform: scale(1.15);
+  }
+  .card-body .card-title {
+    margin-bottom: calc(50% + 20px);
+    transition: 1.5s ease;
+  }
+  .card:hover .card-body .card-title {
+    margin-bottom: .75rem;
+  }
   
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background-color: #fff;
+    transition: 1.5s ease;
+  }
+  .card-content {
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transition: 1.5s ease;
+  }
+  .card:hover .card-body {
+    height: 80%;
+  }
+  .card:hover .card-content {
+    bottom: 0;
+  }
+
+  p{
+    font-weight: bold;
+  }
+
+  h4{
+    font-weight: bolder;
+    margin: auto;
+    color: rgb(60,155,155);
+  }
+
+  .container-bestseller{
+    background-image: url(https://www.k4fashion.com/wp-content/uploads/2019/11/Trendy-Unique-Mandap-Decoration-Ideas-For-Your-Wedding.jpg);
+    width: 52rem;
+    height: 27rem;
+    margin-left: 17%;
+  }
