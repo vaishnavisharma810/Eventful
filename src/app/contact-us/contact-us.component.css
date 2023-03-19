@@ -1,27 +1,194 @@
 .accordian {
-    margin-left: 12px;
-  }
-
-  .m-auto{
-    margin: auto;
+  margin-left: 12px;
 }
 
-.max-width-1{
-    max-width: 80vw;
+.m-auto {
+  margin: auto;
 }
 
-#faq{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: x-large;
-    font-style: oblique;
-    color: rgb(117, 29, 29);
+.max-width-1 {
+  max-width: 80vw;
 }
 
-#query{
-    margin-left: 400px;
-    margin-top: 5px;
+#faq {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  font-style: oblique;
+  color: rgb(117, 29, 29);
 }
 
-body{
-    overflow-x: hidden;
+#query {
+  margin-left: 400px;
+  margin-top: 5px;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+#first-left,
+#first-right {
+  width: 50%;
+}
+
+#first-para {
+  font-style: italic;
+}
+
+#first-left,
+#first-para {
+  font-size: medium;
+}
+
+.carousel-inner>.carousel-item>img {
+  height: 800px;
+
+}
+
+#first-div,
+.second-div {
+  display: flex;
+  flex-direction: row;
+}
+
+#first-right img {
+  border-radius: 20px;
+  width: 20em;
+  height: 25em;
+  margin-left: 100px;
+}
+
+.color-text {
+  color: rgb(47, 104, 104);
+}
+
+.color-text2 {
+  color: rgb(52, 124, 116);
+}
+
+.btn {
+  padding: 20px;
+  margin: 10px;
+}
+
+.spacing {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+/* Contact form for WhatsApp */
+
+.bg-wa {
+  margin-left: 25%;
+  background-image: url(https://img.freepik.com/premium-photo/3d-whatsapp-logo-icon-background-copy-space_474486-131.jpg);
+  width: 600px;
+  height: 300px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.h1-wa {
+  color: white;
+  margin-left: 15%;
+}
+
+.left,
+.right {
+  padding: 3rem;
+}
+
+.right {
+  margin-top: -3.1%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=text]::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+input[type=email]::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+input[type=text],
+input[type=email] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 250px;
+  background-color: rgb(255, 255, 255, 0.6);
+  margin-top: 10px;
+  border: none;
+}
+
+.bg-wa .right textarea::placeholder {
+  color: darkgreen;
+  padding: 0.2rem;
+}
+
+textarea:focus {
+  outline: none;
+  
+  border: 0.5px solid #ccc;
+
+}
+
+input[type=submit] {
+  border-radius: 50px;
+  height: 2rem;
+  width: 7rem;
+  background-color: transparent;
+  color: black;
+  border: 0.5px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15) inset, 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 39px;
+  height: 35px;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Contact form for WhatsApp Ends here*/
+
+/* Contact form for Mail */
+.bg-mail {
+  margin-left: 25%;
+  background-image: url(https://play-lh.googleusercontent.com/UkIkuLNa4V_bgbL2-aaibMzD57c2MILWfH766SzR8XbxFnMNn9AhkdRNKPP-25CwhS4);
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+.h1-mail {
+  color: white;
+  margin-left: 23%;
+}
+
+.bg-mail .right textarea::placeholder {
+  color: darkblue;
+  padding: 0.2rem;
+}
+
+/* Contact form for mail ends here */

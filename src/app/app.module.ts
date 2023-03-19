@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
 import { CartComponent } from './cart/cart.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,10 @@ import { ServicesComponent } from './services/services.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
+  schemas :[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

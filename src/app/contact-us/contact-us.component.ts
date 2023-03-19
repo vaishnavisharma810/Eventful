@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
+  bWhatsApp : boolean = false;
+  bMail : boolean = false;
 
+  displayWhatsApp(){
+    this.bWhatsApp = true;
+    this.bMail = false;
+  }
+
+  displayMail(){
+    this.bMail = true;
+    this.bWhatsApp = false;
+  }
+
+  callButton(){
+    confirm("Ready to make a call");
+  }
 }

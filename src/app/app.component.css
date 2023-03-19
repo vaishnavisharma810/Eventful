@@ -6,45 +6,22 @@
     max-width: 80vw;
 }
 
-.navleft{
-    font-size: 20px;
-    display: flex;
-    
+.color{
+    background-color: white;
 }
 
-.navleft ul{
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin: 0 77px;
+.color-text{
+    color: rgb(60,155,155);
 }
 
-.navleft ul li{
-    list-style: none;
-    margin: 0 14px;
-    font-family:var(--font1);
-    transition: all 0.3s, ease-in-out;
+.nav-pills-color :hover{
+    background-color: rgb(60,155,155);
+    color: rgb(237,248,248);
+    border-radius: 5px;
 }
 
-.navleft ul li a{
-    text-decoration: none;
-    color: black;
+.no-pills :hover{
+    background-color: white;
 }
-
-.navleft ul li a:hover{
-    color: var(--main-bg-color);
-    font-weight: bolder;
-    
-}
-
-.navigation{
-    /* background-color:  #33383b; */
-    margin-top: 25px;
-    height: 74px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
-
 
 
