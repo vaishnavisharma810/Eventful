@@ -1,3 +1,8 @@
+
+<!-- 
+    USE OF SERVICES, PIPES, NGFOR, NGIF
+ -->
+
 <body>
 <br>
 <h2 style="margin-left: 10%; color: rgb(47,104,104) ;">See what all curated packs we have for our clients at reasonable rates</h2>
@@ -14,6 +19,9 @@
         <th>Action</th>
     </thead>
     <tbody>
+        <!-- 
+            NGFOR USED HERE TO ITERATE OVER PRODUCTSDATA ARRAY
+         -->
         <tr *ngFor="let product of productsData" style="font-weight: 500;">
             <td>{{product.packID}}</td>
             <td>{{product.packName}}</td>
@@ -26,6 +34,9 @@
     </tbody>
 </table>
 <div class="selectForm">
+    <!-- 
+        NGIF USED TO CHECK GIVEN CONDITION
+     -->
     <div *ngIf='bDisplaySelectForm == true'>
       Pack ID : <br> <input type="text" [(ngModel)]="productsData[index].packID" /> <br /><br /> 
       Pack Name : <br> <input type="text" [(ngModel)]="productsData[index].packName" /> <br /><br />

@@ -1,5 +1,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- 
+
+  Navbars: Home, About Us, Customer Support, Book Appointment and Cart
+
+ -->
+
+
+
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
     <ul class="nav ">
@@ -10,24 +18,38 @@
         <a class="nav-link fs-6 fw-bolder color-text" routerLinkActive="active" routerLink="/About">About Us</a>
       </li>
       <li class="nav-item nav-pills-color">
-        <a class="nav-link fs-6 fw-bolder color-text" routerLinkActive="active" routerLink="/Contact">Customer Support</a>
+        <a class="nav-link fs-6 fw-bolder color-text" routerLinkActive="active" routerLink="/Contact">Customer
+          Support</a>
       </li>
 
-      <a  routerLinkActive="active" routerLink="/Services"><img src="https://static1.squarespace.com/static/5494b2e0e4b04c9ad8411130/t/54a075b5e4b0df76872502a5/1419802040667/Final_Hi_Res.jpg?format=1500w" style="height:30px; width:60px; margin-left: 10rem; margin-right: 10rem; margin-top: 8px;" alt="Logo"></a>
-      
+      <a routerLinkActive="active" routerLink="/Services"><img
+          src="https://static1.squarespace.com/static/5494b2e0e4b04c9ad8411130/t/54a075b5e4b0df76872502a5/1419802040667/Final_Hi_Res.jpg?format=1500w"
+          style="height:30px; width:60px; margin-left: 10rem; margin-right: 10rem; margin-top: 8px;" alt="Logo"></a>
+
       <li class="nav-item nav-pills-color">
-        <a class="color-text nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/BookAppointment">Book Appointment</a>
+        <a class="color-text nav-link fs-6 fw-bolder" routerLinkActive="active" routerLink="/BookAppointment">Book
+          Appointment</a>
       </li>
       <li class="nav-item nav-pills-color">
-        <a class="color-text nav-link fa fa-shopping-cart fs-6 fw-bolder" style="margin-top: 3px;" routerLinkActive="active" routerLink="/Cart">&nbsp; Cart</a>
+        <a class="color-text nav-link fa fa-shopping-cart fs-6 fw-bolder" style="margin-top: 3px;"
+          routerLinkActive="active" routerLink="/Cart">&nbsp; Cart</a>
       </li>
     </ul>
   </div>
 </nav>
 
+<!-- 
+  This is single Page Application
+ -->
 
-    <router-outlet>
+<router-outlet>
 </router-outlet>
+
+
+<!-- 
+  Footer for every page having social media links
+ -->
+
 
 <div>
   <footer class="bg-dark text-center">
@@ -37,19 +59,19 @@
       <section class="mb-4 nav-pills-color">
 
         <!-- Facebook -->
-        <a class="btn btn-light btn-floating m-1 color-text"  href="www.facebook.com" role="button"><i
+        <a class="btn btn-light btn-floating m-1 color-text" href="www.facebook.com" role="button"><i
             class="fa fa-facebook-f"></i></a>
 
         <!-- Twitter -->
-        <a class="btn btn-light btn-floating m-1 color-text"  href="www.twitter.com" role="button"><i
+        <a class="btn btn-light btn-floating m-1 color-text" href="www.twitter.com" role="button"><i
             class="fa fa-twitter"></i></a>
 
         <!-- Instagram -->
-        <a class="btn btn-light btn-floating m-1 color-text"  href="www.instagram.com" role="button"><i
+        <a class="btn btn-light btn-floating m-1 color-text" href="www.instagram.com" role="button"><i
             class="fa fa-instagram"></i></a>
 
         <!-- Linkedin -->
-        <a class="btn btn-light btn-floating m-1 color-text"  href="www.linkedin.com" role="button"><i
+        <a class="btn btn-light btn-floating m-1 color-text" href="www.linkedin.com" role="button"><i
             class="fa fa-linkedin"></i></a>
 
       </section>

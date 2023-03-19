@@ -1,3 +1,5 @@
+// Importing all the necessary Component needed in our routing
+
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +13,11 @@ import { CartComponent } from './cart/cart.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+
+//All Components are listed below
 
 @NgModule({
   declarations: [
@@ -20,7 +27,9 @@ import { FormsModule } from '@angular/forms';
     BookAppointmentComponent,
     CartComponent,
     NoPageFoundComponent,
-    ServicesComponent
+    ServicesComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +38,7 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     FormsModule
   ],
-  schemas :[CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

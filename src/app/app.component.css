@@ -1,27 +1,34 @@
-.m-auto{
+/* 
+Basic Styling given to all components in app.component.html page
+*/
+
+.m-auto {
     margin: auto;
 }
 
-.max-width-1{
+.max-width-1 {
     max-width: 80vw;
 }
 
-.color{
+
+/* 
+Styling given to nav bars
+*/
+
+.color {
     background-color: white;
 }
 
-.color-text{
-    color: rgb(60,155,155);
+.color-text {
+    color: rgb(60, 155, 155);
 }
 
-.nav-pills-color :hover{
-    background-color: rgb(60,155,155);
-    color: rgb(237,248,248);
+.nav-pills-color :hover {
+    background-color: rgb(60, 155, 155);
+    color: rgb(237, 248, 248);
     border-radius: 5px;
 }
 
-.no-pills :hover{
+.no-pills :hover {
     background-color: white;
 }
-
-

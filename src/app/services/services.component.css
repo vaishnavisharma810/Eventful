@@ -6,6 +6,10 @@
     max-width: 80vw;
 }
 
+/* 
+CAROUSEL STYLING
+*/
+
 ngb-carousel .wrapper {
     position: relative;
     height: 0;
@@ -27,6 +31,10 @@ ngb-carousel .wrapper {
     width: 80%;
     height: 600px;
   }
+
+/* 
+STYLING KEY POINTS SECTION
+*/
 
   .key-points{
     display: flex;
@@ -51,12 +59,15 @@ ngb-carousel .wrapper {
     color: rgb(47,104,104);
   }
 
+  /* 
+  STYLING CARDS SECTION
+  */
+
   .card-container{
     display: flex;
     flex-direction: row;
     margin-left: 22px;
   }
-
 
   .card-wrapper {
     margin-bottom: 30px;
@@ -132,6 +143,10 @@ ngb-carousel .wrapper {
     margin: auto;
     color: rgb(60,155,155);
   }
+
+/* 
+STYLING BESTSELLER SECTION
+*/
 
   .container-bestseller{
     background-image: url(https://www.k4fashion.com/wp-content/uploads/2019/11/Trendy-Unique-Mandap-Decoration-Ideas-For-Your-Wedding.jpg);

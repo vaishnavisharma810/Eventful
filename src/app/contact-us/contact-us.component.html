@@ -1,3 +1,6 @@
+<!-- 
+    ADDING FONT-AWESOME
+ -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
@@ -5,7 +8,10 @@
     <div id="faq" class="justify-content-md-center row">FREQUENTLY ASKED QUESTIONS</div>
 
     <br><br>
-
+    <!-- 
+        BOOTSTRAP
+        ACCORDIANS USED
+     -->
     <div class="accordion max-width-1 m-auto" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -130,6 +136,11 @@
 
 <br><br><br>
 
+<!-- 
+    NGIF COMPONENT, EVENT BINDING, ROUTING USED
+
+ -->
+
 <div id="first-div" class="m-auto max-width-1">
     <div id="first-left">
         <h2 class="color-text">Have a question in mind?</h2>
@@ -137,14 +148,19 @@
         <p>Eventful values its Customers, connect with us and we will reach out to you in your celebrations Over 1 Lacs+
             customers trust Eventful to make their event planning a breeze.</p>
         <br>
-        <button class="btn btn-success fa fa-whatsapp text-dark" (click) = "displayWhatsApp()">&nbsp; WhatsApp</button> &nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-primary fa fa-envelope-o text-dark" (click)="displayMail()"> &nbsp; Mail</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success fa fa-whatsapp text-dark" (click)="displayWhatsApp()">&nbsp; WhatsApp</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary fa fa-envelope-o text-dark" (click)="displayMail()"> &nbsp;
+            Mail</button>&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn btn-warning fa fa-phone text-dark" (click)="callButton()"> &nbsp; Call</button>
-        <button class="btn btn-info fa fa-user spacing text-dark" routerLinkActive="active" routerLink="/BookAppointment" > &nbsp; Book an Appointment with us!</button>
+        <button class="btn btn-info fa fa-user spacing text-dark" routerLinkActive="active"
+            routerLink="/BookAppointment"> &nbsp; Book an Appointment with us!</button>
     </div>
 
-   
 
+    <!-- 
+        BOOTSTRAP CAROUSELS
+     -->
     <div id="first-right">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -162,41 +178,52 @@
 </div>
 <br><br><br>
 
-<ng-container *ngIf = "bWhatsApp == true; then displayWhatsAppForm; else displayMailForm"></ng-container>
+<!-- 
+    NGIF TO DISPLAY WHATSAPP AND MAIL FORM
+ -->
+
+<ng-container *ngIf="bWhatsApp == true; then displayWhatsAppForm; else displayMailForm"></ng-container>
+<!-- 
+    WHATSAPP FORM
+ -->
 <ng-template #displayWhatsAppForm>
     <div class="bg-wa">
         <h1 class="h1-wa">Contact Via WhatsApp</h1>
         <form action="">
-        <div class="left">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Name">
-          <input type="submit" value="Send">
-        </div>
-        <div class="right">
-          <label for="phone"></label>
-          <br>
-          <input type="text" name="phone" id="phone" autocomplete="on" placeholder="WhatsApp Number">
-          <textarea rows="2" placeholder="Leave a message..."></textarea>
-        </div>
-          </form>
-      </div>
+            <div class="left">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="submit" value="Send">
+            </div>
+            <div class="right">
+                <label for="phone"></label>
+                <br>
+                <input type="text" name="phone" id="phone" autocomplete="on" placeholder="WhatsApp Number">
+                <textarea rows="2" placeholder="Leave a message..."></textarea>
+            </div>
+        </form>
+    </div>
 </ng-template>
+
+<!-- 
+    MAIL FORM
+ -->
 <ng-template #displayMailForm>
     <div class="bg-mail">
         <h1 class="h1-mail">Contact Via Mail</h1>
         <form action="">
-        <div class="left">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Name">
-          <input type="submit" value="Send">
-        </div>
-        <div class="right">
-          <label for="phone"></label>
-          <br>
-          <input type="email" name="mail" id="mail" autocomplete="on" placeholder="Mail ID">
-          <textarea rows="2" placeholder="Leave a message..."></textarea>
-        </div>
-          </form>
-      </div>
+            <div class="left">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="submit" value="Send">
+            </div>
+            <div class="right">
+                <label for="phone"></label>
+                <br>
+                <input type="email" name="mail" id="mail" autocomplete="on" placeholder="Mail ID">
+                <textarea rows="2" placeholder="Leave a message..."></textarea>
+            </div>
+        </form>
+    </div>
 </ng-template>
 <br><br>

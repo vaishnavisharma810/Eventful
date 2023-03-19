@@ -1,12 +1,16 @@
 <body>
 
-<div id="container">
+  <div id="container">
     <!--This is a division tag for body container-->
     <div id="body_header">
       <!--This is a division tag for body header-->
       <br>
       <h1>Appointment Request Form</h1>
 
+      <!-- 
+        APPOINTMENT FORM STARTS HERE:
+        TWO WAY DATA BINDING, USE OF PIPES, NGIF
+       -->
     </div>
     <form action="index.html" method="post">
       <fieldset>
@@ -15,7 +19,7 @@
         <input type="text" name="user_name" placeholder="Name" required [(ngModel)]="name">
 
         <label for="mail">Email: *</label>
-        <input type="email" name="user_email" placeholder="abc@xyz.com" required  [(ngModel)]="email">
+        <input type="email" name="user_email" placeholder="abc@xyz.com" required [(ngModel)]="email">
 
         <label for="tel">Contact Number: *</label>
         <input type="tel" placeholder="Include country code" name="user_num" [(ngModel)]="mobile">
@@ -38,9 +42,10 @@
           <option value="other">Other</option>
         </select>
         <label for="appointment_description">Appointment Description:</label>
-        <textarea id="appointment_description" name="appointment_description" placeholder="Describe in not more than 50 words"></textarea>
+        <textarea id="appointment_description" name="appointment_description"
+          placeholder="Describe in not more than 50 words"></textarea>
         <label for="date">Date: *</label>
-        <input type="date" name="date" value="" required [(ngModel)]="date"/>
+        <input type="date" name="date" value="" required [(ngModel)]="date" />
         <br>
         <label for="time">Time: *</label>
         <input type="time" name="time" value="" required [(ngModel)]="time">
@@ -53,24 +58,33 @@
       </fieldset>
       <button class="btn btn-success" (click)="displayAppointmentReciept()">Request For Appointment</button>
     </form><br>
-    <ng-container *ngIf="bdisplay == true; then AppointmentReciept; else noReciept;"></ng-container>
 
+    <!-- 
+  ng-container USED HERE WITH ngIf 
+ -->
+
+    <ng-container *ngIf="bdisplay == true; then AppointmentReciept; else noReciept;"></ng-container>
+    <!-- 
+  ng-template USED
+ -->
     <ng-template #AppointmentReciept>
-        <div class="container text-center">
-            <h3>Appointment Reciept</h3><br>
-            <b> Dear {{name}}, <br> </b>
-            You have an appointment on <b>{{date | date }}</b>at <b>{{time}}</b> for <b>{{appointment}} event</b><br>
-            Kindly be <b>15 minutes early</b> to your appointment. <br>
-            Kindly pay <b>{{money | currency : 'INR'}}</b> before <b>{{date | date}}</b> to confirm the appointment. After which you will soon recieve a confirmation mail on you mail ID <b>{{email}}</b> and a confirmation SMS on <b>{{mobile}}</b>. <br><br>
-            You can show that mail or the SMS at the reception on {{date}} to meet us!
-            <br><br>
-            <b> SEE YOU SOON!!! </b>
-        </div>
+      <div class="container text-center">
+        <h3>Appointment Reciept</h3><br>
+        <b> Dear {{name}}, <br> </b>
+        You have an appointment on <b>{{date | date }}</b>at <b>{{time}}</b> for <b>{{appointment}} event</b><br>
+        Kindly be <b>15 minutes early</b> to your appointment. <br>
+        Kindly pay <b>{{money | currency : 'INR'}}</b> before <b>{{date | date}}</b> to confirm the appointment. After
+        which you will soon recieve a confirmation mail on you mail ID <b>{{email}}</b> and a confirmation SMS on
+        <b>{{mobile}}</b>. <br><br>
+        You can show that mail or the SMS at the reception on {{date}} to meet us!
+        <br><br>
+        <b> SEE YOU SOON!!! </b>
+      </div>
     </ng-template>
     <ng-template #noReciept>
-        <div class = "container text-center">
-            When you will book an appointment your reciept will be displayed here!
-        </div>
+      <div class="container text-center">
+        When you will book an appointment your reciept will be displayed here!
+      </div>
     </ng-template>
   </div>
   <br><br>

@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   search : string = "";
 
+
+  // EVENT BINDING WHEN YOU SEARCH YOUR CITY
   searchCity(){
     alert("Woho!!! We are there in " +this.search);
   }

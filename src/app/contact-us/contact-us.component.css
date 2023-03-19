@@ -1,7 +1,12 @@
+/* 
+STYLING ACCORDIAN
+*/
+
 .accordian {
   margin-left: 12px;
 }
 
+/* BASIC STYLING */
 .m-auto {
   margin: auto;
 }
@@ -26,6 +31,10 @@ body {
   overflow-x: hidden;
 }
 
+/* 
+STYLING THE PARAGRAPHS CONTENT AND ITS DISPLAY
+*/
+
 #first-left,
 #first-right {
   width: 50%;
@@ -40,6 +49,10 @@ body {
   font-size: medium;
 }
 
+
+/* 
+STYLING CAROUSELS
+*/
 .carousel-inner>.carousel-item>img {
   height: 800px;
 
@@ -76,7 +89,9 @@ body {
   margin-top: 30px;
 }
 
-/* Contact form for WhatsApp */
+/* 
+Contact form for WhatsApp 
+*/
 
 .bg-wa {
   margin-left: 25%;
@@ -143,7 +158,7 @@ textarea {
 
 textarea:focus {
   outline: none;
-  
+
   border: 0.5px solid #ccc;
 
 }
@@ -168,10 +183,13 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+/* 
+Contact form for WhatsApp Ends here
+*/
 
-/* Contact form for WhatsApp Ends here*/
-
-/* Contact form for Mail */
+/* 
+Contact form for Mail 
+*/
 .bg-mail {
   margin-left: 25%;
   background-image: url(https://play-lh.googleusercontent.com/UkIkuLNa4V_bgbL2-aaibMzD57c2MILWfH766SzR8XbxFnMNn9AhkdRNKPP-25CwhS4);
@@ -191,4 +209,6 @@ input[type=submit]:hover {
   padding: 0.2rem;
 }
 
-/* Contact form for mail ends here */
+/* 
+Contact form for mail ends here
+ */

@@ -1,3 +1,7 @@
+/* 
+BASIC STYLING GIVEN TO APPOINTMENT FORM
+*/
+
 body {
     background-image: url(https://img.freepik.com/premium-photo/flowers-style-watercolor-art-luxurious-floral-elements-botanical-background-wallpaper-design-prints-invitations-postcards-small-pink-flowers-3d-illustration_76964-2203.jpg);
     width: 100%;
@@ -114,6 +118,10 @@ form {
     max-width: 480px;
 }
 
+
+/* 
+STYLING TO APPLICATION RECIEPT
+*/
 .container{
     border: 2px solid rgb(54, 130, 130);
     border-radius: 20px;
