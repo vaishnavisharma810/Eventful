@@ -8,7 +8,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginMail : string = "Admin@gmail.com";
-  loginPwd : string = "Admin";
+
+  loginMail : string = "admin";
+  loginPwd : string = "admin";
   
 }

@@ -14,7 +14,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+
 
 
 //All Components are listed below
@@ -28,8 +28,7 @@ import { RegisterComponent } from './register/register.component';
     CartComponent,
     NoPageFoundComponent,
     ServicesComponent,
-    LoginComponent,
-    RegisterComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
