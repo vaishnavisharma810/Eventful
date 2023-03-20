@@ -144,6 +144,11 @@ STYLING KEY POINTS SECTION
     color: rgb(60,155,155);
   }
 
+  .btn-clr{
+    background-color: rgb(60,155,155);
+    color: white;
+  }
+
 /* 
 STYLING BESTSELLER SECTION
 */
