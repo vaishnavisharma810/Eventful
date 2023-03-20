@@ -11,5 +11,9 @@ export class LoginComponent {
 
   loginMail : string = "admin";
   loginPwd : string = "admin";
+
+  checkLogin(){
+    
+  }
   
 }
