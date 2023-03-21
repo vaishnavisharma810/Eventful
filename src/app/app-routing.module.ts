@@ -15,8 +15,8 @@ const routes: Routes = [
   {path: "BookAppointment", component: BookAppointmentComponent},
   {path: "Cart", component: CartComponent},
   {path: "Services", component: ServicesComponent},
-  {path: "**", component: NoPageFoundComponent},
-  {path: "Login", component: LoginComponent}
+  {path: "Login", component: LoginComponent},
+  {path: "**", component: NoPageFoundComponent}
 ];
 
 @NgModule({
