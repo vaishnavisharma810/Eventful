@@ -14,6 +14,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -28,7 +29,8 @@ import { LoginComponent } from './login/login.component';
     CartComponent,
     NoPageFoundComponent,
     ServicesComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

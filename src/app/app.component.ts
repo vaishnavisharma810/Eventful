@@ -25,4 +25,8 @@ export class AppComponent {
     config.keyboard = true;
     config.pauseOnHover = true;
   } 
+
+  noLoginActive : boolean = true;
+
+
 }

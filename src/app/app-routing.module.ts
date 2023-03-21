@@ -5,11 +5,13 @@ import { BookAppointmentComponent } from './book-appointment/book-appointment.co
 import { CartComponent } from './cart/cart.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {path: "", component: LoginComponent},
+  {path: "Navbar", component: NavbarComponent},
   {path: "About", component: AboutUsComponent},
   {path: "Contact", component: ContactUsComponent},
   {path: "BookAppointment", component: BookAppointmentComponent},
